@@ -19,9 +19,7 @@ pipeline {
                     echo 'HOOOOOOLA, Jenkins'
                     sh 'dir'
                      echo 'ADIOS, Jenkins'
-                 //   tree
-                    
-                    
+                
                   //   bat 'echo Hola, este es un mensaje desde el script de Jenkins'
                     //echo PASANDO POR AQUI
                  //   bat 'echo pasando por aqui'
