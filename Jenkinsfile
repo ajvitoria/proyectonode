@@ -33,7 +33,7 @@ pipeline {
             steps {
                 script {
                     echo 'Listando IMAGENES DOCKER'
-                    sh 'docker images'  // Detener el contenedor si está corriendo
+                    docker images  // Detener el contenedor si está corriendo
 
                 }
             }
