@@ -13,6 +13,8 @@ pipeline {
         }
         stage('Construyendo Docker Image') {
             steps {
+
+                bat "dir /w"
                 script {
                  //   bat "dir"
   
