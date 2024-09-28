@@ -31,6 +31,15 @@ pipeline {
                 }
             }
         }
+       stage('Ejecutando Conteneddor Docker Container') {
+            steps {
+                script {
+                    echo 'Listando IMAGENES DOCKER'
+                    sh 'docker images'  // Detener el contenedor si está corriendo
+
+                }
+            }
+        }
         stage('Ejecutando Conteneddor Docker Container') {
             steps {
                 script {
