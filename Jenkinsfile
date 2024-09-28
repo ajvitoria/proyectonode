@@ -14,12 +14,15 @@ pipeline {
         stage('Construyendo Docker Image') {
             steps {
                 script {
+                    bat 'dir /w'
+                    /*
                     node('WINDOWS-AGENT-1') {
                         def cmd_command = "cmd /c echo hello"
                         cmd_command.execute()
                     }
+                    */
                     echo 'Hello, Jenkins'
-                    tree
+                 //   tree
                     
                     
                   //   bat 'echo Hola, este es un mensaje desde el script de Jenkins'
