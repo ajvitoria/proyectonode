@@ -14,7 +14,11 @@ pipeline {
         stage('Construyendo Docker Image') {
             steps {
                 script {
-                    echo 'Hello, Maven'
+                    cd
+                    echo 'Hello, Jenkins'
+                    tree
+                    
+                    
                   //   bat 'echo Hola, este es un mensaje desde el script de Jenkins'
                     //echo PASANDO POR AQUI
                  //   bat 'echo pasando por aqui'
