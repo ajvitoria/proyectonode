@@ -14,6 +14,8 @@ pipeline {
         stage('Construyendo Docker Image') {
             steps {
                 script {
+                    bat 'dir'  // Lista el contenido del directorio 
+                    
                     docker.build(DOCKER_IMAGE)
                 }
             }
