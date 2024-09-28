@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/zzaazzajvitoria/proyectonode.git'
+                git branch: 'main', url: 'https://github.com/ajvitoria/proyectonode.git'
             }
         }
         stage('Construyendo Docker Image') {
