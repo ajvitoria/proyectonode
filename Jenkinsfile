@@ -14,7 +14,7 @@ pipeline {
         stage('Construyendo Docker Image') {
             steps {
 
-               // script {
+               script {
                  //   bat "dir"
   
                     echo 'HOOOOOOLA, Jenkins'
@@ -29,7 +29,7 @@ pipeline {
                  //   docker.build(DOCKER_IMAGE)
                 }
             }
-        }
+       }
        stage('LISTANDO IMAGENES DOCKER') {
             steps {
                 script {
