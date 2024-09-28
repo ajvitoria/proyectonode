@@ -29,7 +29,7 @@ pipeline {
                 }
             }
         }
-       stage('Ejecutando Conteneddor Docker Container') {
+       stage('LISTANDO IMAGENES DOCKER') {
             steps {
                 script {
                     echo 'Listando IMAGENES DOCKER'
