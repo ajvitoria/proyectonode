@@ -18,9 +18,7 @@ pipeline {
                  //   bat "dir"
   
                     echo 'HOOOOOOLA, Jenkins'
-                    docker.image('jenkins/jenkins').inside{
-                        sh 'ls -l .'
-                    }
+
                      echo 'ADIOS, Jenkins'
                 
                   //   bat 'echo Hola, este es un mensaje desde el script de Jenkins'
@@ -36,6 +34,11 @@ pipeline {
             steps {
                 script {
                     echo 'Listando IMAGENES DOCKER'
+
+                    docker.image('jenkins/jenkins').inside{
+                        sh 'ls -l .'
+                    }
+                    
                     docker images  // Detener el contenedor si está corriendo
 
                 }
