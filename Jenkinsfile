@@ -14,7 +14,7 @@ pipeline {
         stage('Construyendo Docker Image') {
             steps {
                 script {
-                    bat 'dir /w'
+                    bat "dir /w"
                     /*
                     node('WINDOWS-AGENT-1') {
                         def cmd_command = "cmd /c echo hello"
