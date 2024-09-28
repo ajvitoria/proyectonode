@@ -17,6 +17,8 @@ pipeline {
                  //   bat "dir"
   
                     echo 'HOOOOOOLA, Jenkins'
+                    sh 'dir'
+                     echo 'ADIOS, Jenkins'
                  //   tree
                     
                     
