@@ -14,7 +14,7 @@ pipeline {
         stage('Construyendo Docker Image') {
             steps {
                 script {
-                    bat "dir"
+                 //   bat "dir"
   
                     echo 'HOOOOOOLA, Jenkins'
                  //   tree
