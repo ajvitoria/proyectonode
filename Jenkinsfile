@@ -14,12 +14,13 @@ pipeline {
         stage('Construyendo Docker Image') {
             steps {
 
-                bat "dir /w"
-                script {
+               // script {
                  //   bat "dir"
   
                     echo 'HOOOOOOLA, Jenkins'
-                  //  sh 'dir'
+                    docker.image('jenkins/jenkins').inside{
+                        sh 'ls -l .'
+                    }
                      echo 'ADIOS, Jenkins'
                 
                   //   bat 'echo Hola, este es un mensaje desde el script de Jenkins'
